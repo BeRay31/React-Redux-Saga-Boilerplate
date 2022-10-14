@@ -1,7 +1,7 @@
 import { incrementAsync, incrementAsyncFailed, incrementAsyncSuccess } from "../reducer/counter.reducer";
 import { call, put, takeLatest } from 'redux-saga/effects'
 import { PayloadAction } from "@reduxjs/toolkit";
-import { fetchCount } from "../lib/counterAPI";
+import { fetchCount } from "../lib/counter.api";
 
 export function* incrementAsyncSaga(action: PayloadAction<number>) {
   try {
